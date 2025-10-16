@@ -23,6 +23,7 @@ class Application{
         }
     }
 
+    // asks user for console input and return input as promise - can use await 
     promptLine(query) {
         return new Promise((resolve) => {
             this.read.question(query, (line) => {
@@ -62,6 +63,7 @@ class Application{
     }
 
 
+    // run the application
     async run() {
         console.log(OutputHandler.header());
         console.log();  
@@ -69,10 +71,10 @@ class Application{
             await this.getInput();
             this.parseInput();
             
-            const machine = new Fteen_Cleaner(this.inputData.grid.width, this.inputData.grid.length);
-            machine.setInitialPosition(this.inputData.position.direction, this.inputData.position.x, this.inputData.position.y); 
-            machine.executeCommands(this.inputData.commands);
-            const status = machine.getStatus();
+            const cleaner = new FteenCleaner(this.inputData.grid.width, this.inputData.grid.length);
+            cleaner.setInitialPosition(this.inputData.position.direction, this.inputData.position.x, this.inputData.position.y); 
+            cleaner.executeCommands(this.inputData.commands);
+            const status = cleaner.getStatus();
             
             console.log(OutputHandler.results(status));
             
