@@ -1,6 +1,6 @@
 # semantic-uppgift
 
-## Coding assignment for employeement at Semantic 
+## Coding assignment for job application at Semantic 
 
 **Programmer: __Sara Ljung__**
 
