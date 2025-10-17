@@ -1,3 +1,5 @@
+//FteenCleaner class - handle cleaner movement, directions and status 
+
 import Config from './config.js';
 
 class FteenCleaner {

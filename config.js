@@ -21,6 +21,7 @@ const Config = {
         programmer: 'Sara Ljung',
         programName: 'Fteen 1000 Pool Cleaner Simulator',
         description: [
+            'Description:',
             'This program simulates the movement of an electric pool cleaner with a grid based console interface based on user-input commands.',
             'The cleaner can move forward and turn left or right within the defined grid size.',
             'The program validates the input for grid size, initial position, and command sequence, providing error messages potential issues.'

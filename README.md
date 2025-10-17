@@ -1,7 +1,10 @@
 # semantic-uppgift
 
-// TODO: 
+## Coding assignment for employeement at Semantic 
 
-- write in mail that the grid is wrong for the description 
+**Programmer: __Sara Ljung__**
 
-- maybe add more comments? 
+**Run program:** 
+```
+node app.js
+```
